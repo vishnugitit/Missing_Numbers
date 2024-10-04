@@ -1,0 +1,26 @@
+<script>
+  arr = [23, 33, 200, 785];
+  dup = "";
+  for (i of arr) {
+    istr = String(i);
+    emp = [];
+    for (j of istr) {
+      if (!emp.includes(j)) {
+        emp.push(j);
+      }
+    }
+    console.log(istr, emp);
+    for (a of emp) {
+      c = 0;
+      for (b of istr) {
+        if (a == b) {
+          c++;
+        }
+      }
+      if (c > 1) {
+        dup += a;
+      }
+    }
+  }
+  alert(dup);
+</script>

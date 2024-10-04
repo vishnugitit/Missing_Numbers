@@ -1,0 +1,21 @@
+<script>
+  function fib(n1) {
+    (a = 0), (b = 1), (emp = []), (f = 1);
+    while (a <= n1) {
+      emp.push(a);
+      c = a + b;
+      a = b;
+      b = c;
+    }
+
+    for (m of emp) {
+      if (!num.includes(m)) {
+        return m;
+      }
+    }
+  }
+  num = [10, 1, 0, 5, 7];
+  num.sort((a, b) => a - b);
+  n = num[num.length - 1];
+  alert(fib(n));
+</script>

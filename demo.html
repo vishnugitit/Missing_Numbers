@@ -1,0 +1,7 @@
+<script>
+const pr1=new Promise((x,y)=>{
+    y("promise rejected")
+})
+pr1.then((e)=>{console.log(e,"Then block Triggered")})
+pr1.catch((e)=>{console.log(e,"Triggers catch block")})
+</script>
